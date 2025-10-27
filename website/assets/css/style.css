@@ -1,3 +1,4 @@
+/* Inicio del Nav */
 body{
     background: #BDBDBD;
 }
@@ -6,3 +7,65 @@ body{
     background-color: #255A80;
     border: none;
 }
+.header{
+    background-color: #fff;
+}
+
+/* Fondo y espaciado del navbar */
+.navbar {
+  background-color: #fff;
+  width: 100vw;
+  padding: 0.8rem 2rem;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 100%;
+}
+
+/* Título del sitio */
+.navbar-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.navbar-title a {
+  text-decoration: none;
+  color: #2E2C2C;
+  transition: color 0.3s;
+}
+
+.navbar-title a:hover {
+  color: #255A80;
+}
+
+/* Enlaces centrados */
+.navbar-nav {
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+/* Enlaces de navegación */
+.nav-link {
+  color: #575151;
+  font-size: 1.1rem;
+  transition: color 0.3s, transform 0.3s;
+}
+
+/* Efecto hover */
+.nav-link:hover {
+  color: #255A80;
+  transform: scale(1.2);
+}
+
+/* En móviles */
+@media (max-width: 992px) {
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+/* Fin del Nav */
