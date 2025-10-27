@@ -3,6 +3,10 @@ body{
     background: #BDBDBD;
 }
 
+.btn-card{
+    background-color: #255A80;
+    border: none;
+}
 .header{
     background-color: #fff;
 }
