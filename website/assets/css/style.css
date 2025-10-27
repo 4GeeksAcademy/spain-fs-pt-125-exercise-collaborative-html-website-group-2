@@ -1,3 +1,122 @@
+/* Estilo global del body */
+body {
+  /* Color de fondo general de la página: gris claro */
+  background: #BDBDBD;
+}
+
+/* ---------------------------------------------
+   Estilos del pie de página (footer)
+   - Fondo oscuro para separar visualmente del contenido
+   - Texto claro para contraste y legibilidad
+   --------------------------------------------- */
+footer {
+  background-color: #1a1a1a; /* fondo oscuro */
+  color: #f7f7f7;           /* color de texto claro */
+  font-family: Arial, sans-serif; /* tipografía del footer */
+}
+
+/* Subtítulos dentro del footer: mayor espaciado entre letras para énfasis */
+footer h5 {
+  letter-spacing: 1.5px;
+}
+
+/* Párrafos dentro del footer: se elimina el margen por defecto
+   para controlar el espaciado desde el contenedor exterior. */
+footer p {
+  margin: 0;
+}
+
+/* Clases utilitarias para colores de énfasis
+   Usar estas clases para resaltar texto relacionado con el branding. */
+.f1-color {
+  color: #e10600;   /* rojo fuerte */
+  font-weight: bold; /* destacar con negrita */
+}
+
+.barca-color {
+  color: #A50044;   /* tono vino/magenta */
+  font-weight: bold;
+}
+
+/* Sección inferior del footer (barra con copyright o links)
+   - Fondo semitransparente para dar separación visual
+   - Texto centrado y tamaño ligeramente menor */
+.footer-bottom {
+  background-color: rgba(255,255,255,0.1); /* semitransparencia */
+  font-size: 0.9em;    /* tamaño de fuente reducido */
+  padding: 10px 0;     /* espacio vertical */
+  text-align: center;  /* centrar contenido */
+}
+ body, html {
+      height: 100%;
+      margin: 0;
+    }
+    .bg-fusion {
+      background-image: 
+        linear-gradient(rgba(26,33,136,0.5), rgba(230,0,38,0.5)),
+        url('https://images.wallpapersden.com/image/download/fc-barcelona-x-red-bull-racing-formula-1_bWppa2SUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fusion-banner {
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .fusion-text {
+      background: rgba(255,255,255,0.92);
+      margin-bottom: 10px;
+      padding: 14px 0;
+      text-align: center;
+      border-radius: 4px;
+      width: 100%;
+      box-shadow: 0 2px 10px 2px rgba(0,0,0,0.10);
+    }
+    .main-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(to right,#1a2188,#e60026 60%);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+    .sub-title {
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: #153976;
+      letter-spacing: 0.05em;
+    }
+    .icon-fusion {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 2rem;
+    }
+    .icon-fusion img {
+      height: 64px;
+      width: auto;
+      background: white;
+      border-radius: 8px;
+      padding: 8px;
+      box-shadow: 0 2px 8px 1px rgba(0,0,0,0.10);
+      transition: transform .2s;
+    }
+    .icon-fusion img:hover {
+      transform: scale(1.07);
+    }
+    @media (max-width: 768px) {
+      .main-title { font-size: 2rem; }
+      .sub-title { font-size: 1.2rem; }
+      .fusion-banner { width: 99%; }
+      .icon-fusion img { height: 36px; }
+      .icon-fusion { gap: 1rem; }
+    }
 /* Inicio del Nav */
 body{
     background: #BDBDBD;
