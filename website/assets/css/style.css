@@ -1,8 +1,3 @@
-/* Estilo global del body */
-body {
-  /* Color de fondo general de la página: gris claro */
-  background: #BDBDBD;
-}
 
 /* ---------------------------------------------
    Estilos del pie de página (footer)
@@ -118,11 +113,8 @@ footer p {
       .icon-fusion { gap: 1rem; }
     }
 /* Inicio del Nav */
-/* Estilo global del body */
-body {
-  /* Color de fondo general de la página: gris claro */
-  background: #BDBDBD;
-}
+
+
 
 /* ---------------------------------------------
    Estilos del pie de página (footer)
@@ -237,7 +229,4 @@ footer p {
       .icon-fusion img { height: 36px; }
       .icon-fusion { gap: 1rem; }
     }
-/* Inicio del Nav */
-body{
-background: #BDBDBD;
-}
+
