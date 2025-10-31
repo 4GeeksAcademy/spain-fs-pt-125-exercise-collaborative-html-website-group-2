@@ -69,3 +69,15 @@ body{
 }
 
 /* Fin del Nav */
+
+
+/*INICIO PORTFOLIO */
+.btn-card {
+  background-color: #255A80;
+  border: none;
+}
+
+.container-portfolio{
+  background-color: white;
+}
+/* FIN PORTFOLIO */
