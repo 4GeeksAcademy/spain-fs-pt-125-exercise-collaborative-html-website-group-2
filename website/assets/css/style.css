@@ -1,4 +1,8 @@
 
+img-small{ height: 180px;
+width: 180px;
+object-fit: cover;}
+
 /* ---------------------------------------------
    Estilos del pie de página (footer)
    - Fondo oscuro para separar visualmente del contenido
@@ -312,4 +316,5 @@ footer p {
       .icon-fusion img { height: 36px; }
       .icon-fusion { gap: 1rem; }
     
+
 
