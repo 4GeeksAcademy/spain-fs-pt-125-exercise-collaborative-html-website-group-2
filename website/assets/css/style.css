@@ -1,14 +1,137 @@
-/* Inicio del Nav */
-body{
-    background: #BDBDBD;
+.img-small {   
+height: 180px;
+width: 180px;
+object-fit: cover;}
+
+/* ---------------------------------------------
+   Estilos del pie de página (footer)
+   - Fondo oscuro para separar visualmente del contenido
+   - Texto claro para contraste y legibilidad
+   --------------------------------------------- */
+footer {
+  background-color: #1a1a1a;
+  /* fondo oscuro */
+  color: #f7f7f7;
+  /* color de texto claro */
+  font-family: Arial, sans-serif;
+  /* tipografía del footer */
 }
 
-.btn-card{
-    background-color: #255A80;
-    border: none;
+/* Subtítulos dentro del footer: mayor espaciado entre letras para énfasis */
+footer h5 {
+  letter-spacing: 1.5px;
 }
-.header{
-    background-color: #fff;
+
+/* Párrafos dentro del footer: se elimina el margen por defecto
+   para controlar el espaciado desde el contenedor exterior. */
+footer p {
+  margin: 0;
+}
+
+/* Clases utilitarias para colores de énfasis
+   Usar estas clases para resaltar texto relacionado con el branding. */
+.f1-color {
+  color: #e10600;
+  /* rojo fuerte */
+  font-weight: bold;
+  /* destacar con negrita */
+}
+
+.barca-color {
+  color: #A50044;
+  /* tono vino/magenta */
+  font-weight: bold;
+}
+
+/* Sección inferior del footer (barra con copyright o links)
+   - Fondo semitransparente para dar separación visual
+   - Texto centrado y tamaño ligeramente menor */
+.footer-bottom {
+  background-color: rgba(255, 255, 255, 0.1);
+  /* semitransparencia */
+  font-size: 0.9em;
+  /* tamaño de fuente reducido */
+  padding: 10px 0;
+  /* espacio vertical */
+  text-align: center;
+  /* centrar contenido */
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg-fusion {
+    background-color: #0d1117; /* Fondo oscuro temático para F1/Barcelona, ajusta según necesites */
+    color: white;
+    width: 100%;
+    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
+}
+
+.fusion-banner {
+    max-width: 800px; /* Limita el ancho máximo para pantallas grandes */
+    padding: 2rem;
+}
+
+.icon-fusion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; /* Espacio entre imágenes */
+}
+
+.main-title {
+    color: #a50034; /* Rojo de FC Barcelona */
+    display: block;
+}
+
+.sub-title {
+    color: #fc4c02; /* Naranja para acento F1 */
+    display: block;
+}
+
+/* Media queries para responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2rem; /* Reduce título en tablets/móviles */
+    }
+    
+    .sub-title {
+        font-size: 1rem;
+    }
+    
+    .icon-fusion img {
+        max-width: 60px; /* Imágenes más pequeñas en móviles */
+    }
+    
+    .fusion-banner {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .sub-title {
+        font-size: 0.9rem;
+        line-height: 1.3;
+    }
+    
+    .icon-fusion {
+        flex-direction: column; /* Apila imágenes verticalmente en móviles muy pequeños */
+        gap: 0.5rem;
+    }
+}
+
+
+
+
+.header {
+  background-color: #fff;
 }
 
 /* Fondo y espaciado del navbar */
