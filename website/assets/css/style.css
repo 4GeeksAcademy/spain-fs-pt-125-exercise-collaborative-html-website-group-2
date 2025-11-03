@@ -57,76 +57,76 @@ footer p {
   /* centrar contenido */
 }
 
-body,
-html {
-  height: 100%;
-  margin: 0;
-}
-
-.bg-fusion {
-    background-color: #0d1117; /* Fondo oscuro temático para F1/Barcelona, ajusta según necesites */
-    color: white;
-    width: 100%;
-    min-height: 100vh; /* Ocupa al menos toda la altura de la pantalla */
-}
-
-.fusion-banner {
-    max-width: 800px; /* Limita el ancho máximo para pantallas grandes */
-    padding: 2rem;
-}
-
-.icon-fusion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem; /* Espacio entre imágenes */
-}
-
-.main-title {
-    color: #a50034; /* Rojo de FC Barcelona */
-    display: block;
-}
-
-.sub-title {
-    color: #fc4c02; /* Naranja para acento F1 */
-    display: block;
-}
-
-/* Media queries para responsive */
-@media (max-width: 768px) {
-    .main-title {
-        font-size: 2rem; /* Reduce título en tablets/móviles */
+ body, html {
+      height: 100%;
+      margin: 0;
     }
-    
-    .sub-title {
-        font-size: 1rem;
+    .bg-fusion {
+      background-image: 
+        linear-gradient(rgba(26,33,136,0.5), rgba(230,0,38,0.5)),
+        url('https://images.wallpapersden.com/image/download/fc-barcelona-x-red-bull-racing-formula-1_bWppa2SUmZqaraWkpJRmbmdlrWZlbWU.jpg');
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    
-    .icon-fusion img {
-        max-width: 60px; /* Imágenes más pequeñas en móviles */
-    }
-    
     .fusion-banner {
-        padding: 1rem;
+      width: 90%;
+      max-width: 1000px;
+      margin: auto;
     }
-}
-
-@media (max-width: 480px) {
+    .fusion-text {
+      background: rgba(255,255,255,0.92);
+      margin-bottom: 10px;
+      padding: 14px 0;
+      text-align: center;
+      border-radius: 4px;
+      width: 100%;
+      box-shadow: 0 2px 10px 2px rgba(0,0,0,0.10);
+    }
     .main-title {
-        font-size: 1.5rem;
+      font-size: 3.5rem;
+      font-weight: 700;
+      background: linear-gradient(to right,#1a2188,#e60026 60%);
+      color: transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
     }
-    
     .sub-title {
-        font-size: 0.9rem;
-        line-height: 1.3;
+      font-size: 2.1rem;
+      font-weight: 500;
+      color: #153976;
+      letter-spacing: 0.05em;
     }
-    
     .icon-fusion {
-        flex-direction: column; /* Apila imágenes verticalmente en móviles muy pequeños */
-        gap: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 16px;
+      gap: 2rem;
     }
-}
-
+    .icon-fusion img {
+      height: 64px;
+      width: auto;
+      background: white;
+      border-radius: 8px;
+      padding: 8px;
+      box-shadow: 0 2px 8px 1px rgba(0,0,0,0.10);
+      transition: transform .2s;
+    }
+    .icon-fusion img:hover {
+      transform: scale(1.07);
+    }
+    @media (max-width: 768px) {
+      .main-title { font-size: 2rem; }
+      .sub-title { font-size: 1.2rem; }
+      .fusion-banner { width: 99%; }
+      .icon-fusion img { height: 36px; }
+      .icon-fusion { gap: 1rem; }
+    }
 
 
 
